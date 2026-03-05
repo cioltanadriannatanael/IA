@@ -4,8 +4,8 @@ def citeste_vectori(nume_fisier: str) -> tuple[list[float], list[float]]:
     """Citește doi vectori din fișierul de intrare."""
     with open(nume_fisier, 'r') as f:
         linii = f.readlines()
-        v1 = [float(val.strip()) for val in linii[0].split(',')]
-        v2 = [float(val.strip()) for val in linii[1].split(',')]
+        v1 = [float(val.strip()) for val in linii[0].split(' ')]
+        v2 = [float(val.strip()) for val in linii[1].split(' ')]
     return v1, v2
 
 if __name__ == "__main__":
